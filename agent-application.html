@@ -540,8 +540,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Years of Experience <span class="required">*</span></label>
-                        <select name="experience" required>
+                        <label for="experience">Years of Experience <span class="required">*</span></label>
+                        <select id="experience" name="experience" required title="Years of Experience">
                             <option value="">Select years of experience</option>
                             <option value="0-1">0-1 years</option>
                             <option value="1-3">1-3 years</option>
@@ -555,7 +555,7 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label>Are you currently working as an education agent? <span class="required">*</span></label>
-                        <select name="currentAgent" required>
+                        <select name="currentAgent" required aria-label="Are you currently working as an education agent?">
                             <option value="">Select an option</option>
                             <option value="yes">Yes</option>
                             <option value="no">No, but I want to start</option>
@@ -564,7 +564,7 @@
 
                     <div class="form-group">
                         <label>How many students have you helped study abroad?</label>
-                        <select name="studentsHelped">
+                        <select name="studentsHelped" aria-label="Number of students helped study abroad">
                             <option value="">Select number of students</option>
                             <option value="0">0 (Just starting)</option>
                             <option value="1-10">1-10 students</option>

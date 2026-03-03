@@ -538,6 +538,20 @@ input[type="radio"] {
 
     .dashboard-container {
         margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content-section.active {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        overflow: auto;
+    }
+
+    .content-section.active>* {
+        flex: 0 0 auto;
     }
 
     .card,

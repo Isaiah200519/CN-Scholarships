@@ -250,6 +250,26 @@ body {
 .dashboard-container {
     margin-left: 260px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Make the active content section fill the remaining space so
+   the main area is fully occupied when the sidebar/menu is shown */
+.content-section.active {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+.content-section.active>.welcome-card,
+.content-section.active>.card,
+.content-section.active>.dashboard-grid,
+.content-section.active>.stats-grid {
+    /* allow these internal blocks to size naturally while the section scrolls */
+    flex: 0 0 auto;
 }
 
 /* ===== TOP BAR / SECTION HEADER ===== */
